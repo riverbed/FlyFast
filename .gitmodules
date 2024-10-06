@@ -1,8 +1,8 @@
 [submodule "FlyFast-WebUI"]
 	path = FlyFast-WebUI
 	branch = main
-	url = https://github.com/Aternity/FlyFast-WebUI.git
+	url = https://github.com/riverbed/FlyFast-WebUI.git
 [submodule "FlyFast-FlightSearch"]
 	path = FlyFast-FlightSearch
 	branch = main
-	url = https://github.com/Aternity/FlyFast-FlightSearch.git
+	url = https://github.com/riverbed/FlyFast-FlightSearch.git
