@@ -68,8 +68,8 @@ services:
       - apm-collector
     container_name: flyfast-webui
     environment:
-      REACT_APP_FLIGHT_SEARCH: http://flyfast-flightsearch:8080
-      REACT_APP_OPENTELEMETRY_ENDPOINT: http://apm-collector:55681
+      VITE_FLIGHT_SEARCH: http://flyfast-flightsearch:8080
+      VITE_OPENTELEMETRY_ENDPOINT: http://apm-collector:55681
       ALLUVIO_UJI_TAG: ${ALLUVIO_UJI_TAG}
     ports:
       - "80:80"
