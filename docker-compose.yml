@@ -60,3 +60,14 @@ services:
       REACT_APP_OPENTELEMETRY_ENDPOINT: http://apm-collector:55681
     ports:
       - "80:80"
+
+  flyfast-load-generator:
+    build: ./FlyFast-load-generator
+    depends_on:
+      - flyfast-flightsearch
+      - flyfast-webui
+      - apm-collector
+    container_name: flyfast-load-generator
+    environment:
+      FLYFAST_HOST_URL: flyfast-webui
+      FLYFAST_HOST_PORT: 80
